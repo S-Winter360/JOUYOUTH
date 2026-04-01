@@ -1,14 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Admin from './pages/Admin';
+import { HashRouter } from 'react-router-dom';
 
-export default function App() {
+// Ensure to replace BrowserRouter with HashRouter
+function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
-      </Routes>
-    </BrowserRouter>
+    <HashRouter>
+      {/* Your routes and content go here */}
+    </HashRouter>
   );
 }
+
+export default App;
